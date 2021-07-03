@@ -122,18 +122,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Data.Sqlite">
-      <HintPath>References\Mono.Data.Sqlite.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\Terraria\TShock\TShock4.5.4_Terraria1.4.2.3\Mono.Data.Sqlite.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Terraria\TShock\TShock4.5.4_Terraria1.4.2.3\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Terraria\TShock\TShock4.5.4_Terraria1.4.2.3\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="OTAPI">
-      <HintPath>..\TShock\TerrariaServerAPI\TerrariaServerAPI\bin\Debug\OTAPI.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\Terraria\TShock\TShock4.5.4_Terraria1.4.2.3\OTAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -141,6 +139,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
+    <Reference Include="TerrariaServer">
+      <HintPath>..\..\Terraria\TShock\TShock4.5.4_Terraria1.4.2.3\TerrariaServer.exe</HintPath>
+    </Reference>
+    <Reference Include="TShockAPI">
+      <HintPath>..\..\Terraria\TShock\TShock4.5.4_Terraria1.4.2.3\ServerPlugins\TShockAPI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collections\ItemsAdapter.cs" />
@@ -244,18 +248,6 @@
     <Compile Include="_General Exceptions\TileProtectedException.cs" />
     <Compile Include="_Utility Classes\TSPlayerEventArgs.cs" />
     <Compile Include="_Utility Classes\Vector2Ex.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TShock\TerrariaServerAPI\TerrariaServerAPI\TerrariaServerAPI.csproj">
-      <Project>{6877506e-adc6-4142-98a6-79e4fa02855a}</Project>
-      <Name>TerrariaServerAPI</Name>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\TShock\TShockAPI\TShockAPI.csproj">
-      <Project>{49606449-072b-4cf5-8088-aa49da586694}</Project>
-      <Name>TShockAPI</Name>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
